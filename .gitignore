@@ -65,4 +65,4 @@ package-lock.json
 dist/
 
 # jetbrains
-.idea/
+.idea/*
