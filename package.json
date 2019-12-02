@@ -2,18 +2,19 @@
   "name": "typescript_express",
   "version": "1.0.0",
   "description": "test de node + expressJS + typescript",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "tsc && nodemon ./dist/server.js",
+    "watch": "ts-nodemon",
+    "start": "tsc && node ./dist/server.js",
     "ts": "ts-node ./lib/server.ts",
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@trongnd/ts-nodemon": "^1.0.3",
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.1"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.2",
