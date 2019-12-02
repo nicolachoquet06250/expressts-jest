@@ -6,10 +6,9 @@
   "scripts": {
     "watch": "ts-nodemon",
     "start": "tsc && node ./dist/server.js",
-    "ts": "ts-node ./lib/server.ts",
     "test": "jest"
   },
-  "author": "",
+  "author": "Nicolas Choquet <nicolachoquet06250@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@trongnd/ts-nodemon": "^1.0.3",
