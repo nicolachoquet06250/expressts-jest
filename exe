@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+const program = require('commander');
+const packageJson = require('./package');
+
+program.version(packageJson.version);
+
+program.on('--help', () => {
+    console.log('help');
+}).parse(process.argv);
