@@ -1,9 +1,32 @@
 #!/usr/bin/env node
 const program = require('commander');
+const commands = require('./dist/commands/commands');
 const packageJson = require('./package');
 
 program.version(packageJson.version);
 
 program.on('--help', () => {
     console.log('help');
-}).parse(process.argv);
+});
+
+program.command('exec <cmd>')
+    .alias('ex')
+    .description('execute the given remote cmd')
+    .option('-e, --exec_mode <mode>', 'Whitch exec mode to use')
+    .action((cmd, options) => {
+        if(options.exec_mode !== undefined) {
+            console.log(`exec ${cmd} using ${options.exec_mode} mode`);
+        }
+    }).on('--help', () => {
+        console.log(`
+        Examples: 
+        
+        $ deploy exec sequential
+        $ deploy exec async`)
+});
+
+program.command('*').action(env => {
+    console.log(`deploying `, env)
+});
+
+program.parse(process.argv);

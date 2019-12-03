@@ -4,8 +4,8 @@
   "description": "test de node + expressJS + typescript",
   "main": "dist/server.js",
   "scripts": {
-    "watch": "ts-nodemon",
-    "start": "tsc && node ./dist/server.js",
+    "postinstall": "tsc",
+    "start": "ts-nodemon",
     "test": "jest"
   },
   "author": "Nicolas Choquet <nicolachoquet06250@gmail.com>",
