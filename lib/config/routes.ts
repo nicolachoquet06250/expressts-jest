@@ -1,11 +1,15 @@
 import { Request, Response } from "express";
-import { NodesController } from "../controllers/node.controller";
+import { Nodes } from "../controllers/node.controller";
+import { Vr } from "../controllers/vr.controller";
 
 export class Routes {
-	public nodesController: NodesController = new NodesController();
+	public nodesController: Nodes = new Nodes();
+	public vrController: Vr = new Vr();
 
 	public routes(app): void {
 		app.route("/").get(this.nodesController.index);
+
+		app.route("/vr").get(this.vrController.index);
 
 		app.route("/nodes").get(this.nodesController.index);
 
