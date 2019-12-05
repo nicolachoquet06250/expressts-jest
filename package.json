@@ -4,7 +4,6 @@
   "description": "test de node + expressJS + typescript",
   "main": "dist/server.js",
   "scripts": {
-    "postinstall": "tsc",
     "start": "ts-nodemon",
     "test": "jest"
   },
