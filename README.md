@@ -20,3 +20,12 @@
     
  - INDEXES:
     - https://news.humancoders.com/
+    
+ - AFRAME.js ( VR & AR )
+    - https://aframe.io/docs/master/introduction/
+    - https://github.com/aframevr/aframe-inspector
+    - https://github.com/donmccurdy/aframe-extras
+    - https://github.com/olioapps/aframe-typescript-toolkit
+    - https://www.blogduwebdesign.com/arjs-creer-realite-augmentee-simplement/
+    - https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf
+    - https://github.com/jeromeetienne/ar.js
